@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{58078554-B6FF-441B-B432-D2B40F266AB9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleBaseApp</RootNamespace>
-    <AssemblyName>ConsoleBaseApp</AssemblyName>
+    <RootNamespace>DeployFilesClone</RootNamespace>
+    <AssemblyName>DeployFilesClone</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -69,6 +69,16 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'develop|AnyCPU'">
+    <OutputPath>bin\develop\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -92,6 +102,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Sequences\AnyBatchDeploySequence.cs" />
+    <Compile Include="Utils\FileUtil.cs" />
     <Compile Include="Utils\LogUtil.cs" />
     <Compile Include="Utils\YamlUtil.cs" />
   </ItemGroup>
@@ -101,6 +113,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.develop.config">
       <DependentUpon>App.config</DependentUpon>
     </None>
     <None Include="App.production.config">
@@ -118,6 +133,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="log4net.config.develop.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="log4net.config.staging.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

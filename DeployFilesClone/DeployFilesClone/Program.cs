@@ -1,9 +1,10 @@
-using ConsoleBaseApp.Utils;
+using DeployFilesClone.Sequences;
+using DeployFilesClone.Utils;
 using log4net;
 using System;
 using System.IO;
 
-namespace ConsoleBaseApp
+namespace DeployFilesClone
 {
     internal class Program
     {
@@ -24,13 +25,13 @@ namespace ConsoleBaseApp
                 {
                     logUtil.ConsoleWriteLineWithInfoLog("Start App.");
                     #region Write Your Program
-                    
+                    AnyBatchDeploySequence.Sequence();
                     #endregion
                     logUtil.ConsoleWriteLineWithInfoLog("End App.");
                 }
                 catch (Exception ex)
                 {
-                    logUtil.ConsoleWriteLineWithErrorLog("Failed ConsoleBaseApp", ex);
+                    logUtil.ConsoleWriteLineWithErrorLog("Failed DeployFilesClone", ex);
                 }
             }
         }

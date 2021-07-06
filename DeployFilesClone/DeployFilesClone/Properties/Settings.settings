@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DeployFilesClone.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BatchDirPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BatchIdArray" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,1,2,3,4,5,6,7,8,9,10</Value>
+    </Setting>
+    <Setting Name="BatchRenameFileExtensionName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*.exe,*.exe.config,*.pdb</Value>
+    </Setting>
+    <Setting Name="ReplaceBeforeBatchIdString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;setting name="hogehogeId" serializeAs="String"&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

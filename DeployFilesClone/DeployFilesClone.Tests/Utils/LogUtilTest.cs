@@ -1,8 +1,8 @@
 ﻿using System;
-using ConsoleBaseApp.Utils;
+using DeployFilesClone.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ConsoleBaseApp.Tests.Utils
+namespace DeployFilesClone.Tests.Utils
 {
     [TestClass]
     public class LogUtilTest

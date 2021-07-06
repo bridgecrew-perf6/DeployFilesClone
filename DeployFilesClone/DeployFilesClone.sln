@@ -3,13 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBaseApp", "ConsoleBaseApp\ConsoleBaseApp.csproj", "{58078554-B6FF-441B-B432-D2B40F266AB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployFilesClone", "DeployFilesClone\DeployFilesClone.csproj", "{58078554-B6FF-441B-B432-D2B40F266AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBaseApp.Tests", "ConsoleBaseApp.Tests\ConsoleBaseApp.Tests.csproj", "{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployFilesClone.Tests", "DeployFilesClone.Tests\DeployFilesClone.Tests.csproj", "{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		develop|Any CPU = develop|Any CPU
 		production|Any CPU = production|Any CPU
 		Release|Any CPU = Release|Any CPU
 		staging|Any CPU = staging|Any CPU
@@ -17,6 +18,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{58078554-B6FF-441B-B432-D2B40F266AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58078554-B6FF-441B-B432-D2B40F266AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58078554-B6FF-441B-B432-D2B40F266AB9}.develop|Any CPU.ActiveCfg = develop|Any CPU
+		{58078554-B6FF-441B-B432-D2B40F266AB9}.develop|Any CPU.Build.0 = develop|Any CPU
 		{58078554-B6FF-441B-B432-D2B40F266AB9}.production|Any CPU.ActiveCfg = production|Any CPU
 		{58078554-B6FF-441B-B432-D2B40F266AB9}.production|Any CPU.Build.0 = production|Any CPU
 		{58078554-B6FF-441B-B432-D2B40F266AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,6 +28,8 @@ Global
 		{58078554-B6FF-441B-B432-D2B40F266AB9}.staging|Any CPU.Build.0 = staging|Any CPU
 		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.develop|Any CPU.ActiveCfg = develop|Any CPU
+		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.develop|Any CPU.Build.0 = develop|Any CPU
 		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.production|Any CPU.ActiveCfg = production|Any CPU
 		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.production|Any CPU.Build.0 = production|Any CPU
 		{E8ECBE5A-722D-4C48-BCDE-1AF2ED2E000A}.Release|Any CPU.ActiveCfg = Release|Any CPU
